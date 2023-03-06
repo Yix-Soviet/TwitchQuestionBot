@@ -1,6 +1,6 @@
 from twitchio.ext import commands
 
-from modules.openai_question import resolveQuestion
+from modules.openai_questions import resolveQuestion
 
 
 async def questionFunction(ctx: commands.Context):
