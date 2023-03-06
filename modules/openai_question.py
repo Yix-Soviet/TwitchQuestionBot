@@ -19,7 +19,7 @@ def resolveQuestion(question):
     # Initial message
     openai.Completion.create(
         model="text-davinci-003",
-        prompt='Soy un robot muy inteligente que responde a preguntas, Si me hacer una pregunta basada en la verdad, te daré la respuesta. Si me hacer una pregunta sin sentido, engañosa o que no tiene una respuesta clara te responderé "Tu pregunta no tiene respuesta, prueba otra vez".',
+        prompt='I am a very intelligent robot that answers questions. If you ask me a question based on truth, I will give you the answer. If you ask me a question that is nonsensical, misleading, or doesn\'t have a clear answer, I will respond with "Your question has no answer, try again." If the answer is longer than 488 characters, I will summarize it to stay within 485 characters.',
         temperature=0,
         max_tokens=100,
         top_p=1,

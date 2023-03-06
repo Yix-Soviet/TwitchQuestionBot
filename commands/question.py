@@ -1,12 +1,12 @@
 from twitchio.ext import commands
 
-from modules.openaiChat import resolveQuestion
+from modules.openai_question import resolveQuestion
+
 
 async def questionFunction(ctx: commands.Context):
     message = ctx.message.content
     question = message.replace("?question", "")
     answer = resolveQuestion(question=question)
-
 
     await ctx.reply(f"Respuesta: {answer}")
 
