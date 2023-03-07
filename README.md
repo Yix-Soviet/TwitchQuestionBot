@@ -1,10 +1,10 @@
-# Twitch Question Bot
+# Twitch Utility Bot
 
 <div align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/200px-Python-logo-notext.svg.png" weight=200px />
 </div>
 
-Description: Bot that answers questions asked by the chat using the OpenAI API (more precisely the Davinci model)
+Description: Bot for Twitch with some interesting utilities and commands.
 
 ## Used Modules
 
@@ -32,4 +32,4 @@ python main.py
 
 # Command(s)
 
-- `?question <message>`: Ask a question
+- `question <message>`: Ask a question
